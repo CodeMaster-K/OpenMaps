@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.search-box {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-box input {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search-box button {
+  padding: 8px 12px;
+  background: #007bff;
   color: white;
+  border: none;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.map-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-toggle label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.prompt-box {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff0b3;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.label-box {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  background: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label-box button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: red;
+}
+
+.info-box {
+  position: absolute;
+  bottom: 20px;
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  max-width: 300px;
+}
+
+.info-box.left {
+  left: 20px;
+}
+
+.info-box.right {
+  right: 20px;
 }
